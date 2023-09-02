@@ -17,7 +17,11 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
 .Top1 {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    height: 50px;
+    color: white;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(59, 29, 253, 1) 100%, rgba(252, 176, 69, 1) 100%);
 }
 
 .FirstContent {
@@ -26,18 +30,33 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     justify-content: center;
 }
 
+
+
+.pad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* width: 35px; */
+}
+
+.pad a {
+    text-decoration: none;
+    color: rgba(59, 29, 253, 1);
+}
+
 .items {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .item {
     /* border-left: 2px solid black; */
-    border-right: 2px solid black;
+    border-right: 2px solid white;
 }
 
 .iteml {
-    border-right: 2px solid black;
+    border-right: 2px solid white;
 }
 
 .SecondContent {
@@ -50,4 +69,87 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     padding-left: 4px;
     padding-right: 4px;
 
+}
+
+.ThirdContent a {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.Top2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.padi a {
+    padding: 8px;
+    text-decoration: none;
+    color: rgba(59, 29, 253, 1);
+}
+
+.padi a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    /* Initial border is transparent */
+    transition: border-color 0.3s ease-in-out;
+    /* Smooth transition for border color */
+}
+
+.padi a:hover {
+    border-bottom: 2px solid rgba(59, 29, 253, 1);
+    /* Border color on hover */
+}
+
+.FourthContent {
+    padding: 5px;
+}
+
+.FourthContent img {
+    height: 40px;
+    width: 100px;
+}
+
+.FifthContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* navbar ends here */
+
+.PageHead1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 90vh;
+    width: 100%;
+    background-image: url("./IMG/BackgroundImge.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.PageContentBox {
+    padding: 10px;
+    width: 900px;
+    color: white;
+    border-left: 10px solid rgb(108, 91, 221);
+}
+
+.PageContentBox a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+}
+
+.PageContentBox a:hover {
+    background-color: white;
+    color: rgba(59, 29, 253, 1);
 }
