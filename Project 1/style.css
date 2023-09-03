@@ -11,7 +11,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     top: 0;
     width: 100%;
     position: fixed;
-
+    z-index: 100;
 }
 
 .Top1 {
@@ -207,6 +207,16 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     padding-left: 20px;
     text-align: justify;
     width: 50%;
+    flex: 1;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: -100;
+}
+
+.PageHead3_first h3 {
+    width: 120px;
+    border-bottom: 5px solid rgba(59, 29, 253, 1);
 }
 
 .PageHead3_first a {
@@ -227,9 +237,28 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: -100;
 }
 
 .PageHead3_second img {
     height: 500px;
     width: 500px;
+}
+
+.crd {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.PageHead4 h3 {
+    margin-left: 110px;
+}
+
+.card img {
+    height: 170px;
 }

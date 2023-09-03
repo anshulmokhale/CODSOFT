@@ -83,6 +83,7 @@
     <div class="PageHead3">
         <div class="PageHead3_first">
             <h3>About us</h3>
+            <h5>We are deeply committed to accomplishing the successful execution of numerous software projects.</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fuga architecto nam consequatur
                 tenetur esse aut doloremque aliquid fugiat quas? In commodi magnam optio ab itaque nesciunt libero iusto
                 ipsum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat mollitia enim ducimus earum
@@ -97,6 +98,36 @@
         </div>
         <div class="PageHead3_second"><img src="./IMG/example-29.svg" alt="" srcset=""></div>
     </div>
+    <div class="PageHead4">
+        <h3>Our Services</h3>
+        <div class="crd">
+            <div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMG/2001.i402.023_Online support FAQ flat composition.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer support</h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMG/328410-PA7RGC-402.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Creative design</h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./IMG/ui-ux-representations-with-laptop.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">User Experience</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -104,6 +135,34 @@
 
     <!-- fontawesome js link -->
     <script src="https://kit.fontawesome.com/bf3a18cfbc.js" crossorigin="anonymous"></script>
+    <script>
+        function handleIntersect(entries, observer) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    firstDiv.style.transform = 'translateX(0)';
+                    firstDiv.style.opacity = 1;
+                    secondDiv.style.transform = 'translateX(0)';
+                    secondDiv.style.opacity = 1;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // Select the elements
+        const pageHead = document.querySelector('.PageHead3');
+        const firstDiv = document.querySelector('.PageHead3_first');
+        const secondDiv = document.querySelector('.PageHead3_second');
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver(handleIntersect, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5, // 
+        });
+
+
+        observer.observe(pageHead);
+    </script>
 </body>
 
 </html>
