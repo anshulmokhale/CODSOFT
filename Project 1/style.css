@@ -153,3 +153,83 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     background-color: white;
     color: rgba(59, 29, 253, 1);
 }
+
+.PageHead2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(59, 29, 253, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    color: white;
+}
+
+.FirstBox {
+    padding: 10px;
+    width: 300px;
+    text-align: justify;
+}
+
+.FirstBox h5 {
+    display: inline-block;
+    padding: 5px;
+}
+
+.SecondBox {
+    padding: 10px;
+    width: 300px;
+    text-align: justify;
+}
+
+.SecondBox h5 {
+
+    display: inline-block;
+    padding: 5px;
+}
+
+.ThirdBox {
+    padding: 10px;
+    width: 300px;
+    text-align: justify;
+}
+
+.ThirdBox h5 {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.PageHead3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.PageHead3_first {
+    padding-left: 20px;
+    text-align: justify;
+    width: 50%;
+}
+
+.PageHead3_first a {
+    text-decoration: none;
+    color: rgba(59, 29, 253, 1);
+    border: 2px solid rgba(59, 29, 253, 1);
+    padding: 5px;
+
+}
+
+.PageHead3_first a:hover {
+    background-color: rgba(59, 29, 253, 1);
+    color: white;
+}
+
+.PageHead3_second {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PageHead3_second img {
+    height: 500px;
+    width: 500px;
+}
