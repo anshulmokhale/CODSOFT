@@ -208,10 +208,10 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     padding-left: 20px;
     text-align: justify;
     width: 50%;
-    flex: 1;
+    /* flex: 1;
     transition: transform 0.5s, opacity 0.5s;
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-100%); */
     z-index: -100;
 }
 
@@ -238,10 +238,10 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    /* flex: 1;
     transition: transform 0.5s, opacity 0.5s;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(100%); */
     z-index: -100;
 }
 
@@ -256,10 +256,46 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     justify-content: space-evenly;
 }
 
+.PageHead4 {
+    margin: 10px;
+}
+
 .PageHead4 h3 {
     margin-left: 110px;
+
 }
 
 .card img {
     height: 170px;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(59, 29, 253, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Create columns for the footer content */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style each column */
+.footer-column {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    /* Add some spacing between columns */
+    padding: 10px;
+}
+
+/* Style the copyright section */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    /* Add some spacing between columns and copyright */
 }
