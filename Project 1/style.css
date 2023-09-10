@@ -131,6 +131,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     height: 90vh;
     width: 100%;
     background-image: url("./IMG/BackgroundImge.jpg");
+    /* background-size: 100% 90vh; */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -153,6 +154,48 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
 .PageContentBox a:hover {
     background-color: white;
     color: rgba(59, 29, 253, 1);
+}
+
+.btn {
+    display: none;
+}
+
+@media (max-width:850px) {
+    .PageHead1 {
+        height: 40vh;
+    }
+
+    .PageContentBox {
+
+        width: auto;
+    }
+
+}
+
+
+
+@media (max-width:650px) {
+    .FifthContent {
+        display: none;
+    }
+
+    .SixthContent {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .Top1 {
+        padding: 5px;
+        flex-direction: column;
+        height: 15vh;
+    }
+
+    .PageHead1 {
+        margin-top: 157px;
+    }
 }
 
 .PageHead2 {
@@ -197,15 +240,42 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     padding: 5px;
 }
 
+@media (max-width:650px) {
+    .PageHead2 {
+        flex-direction: column;
+    }
+
+    .FirstBox {
+
+        width: auto;
+        padding: 10px;
+    }
+
+    .SecondBox {
+
+        width: auto;
+        padding: 10px;
+    }
+
+    .ThirdBox {
+
+        width: auto;
+        padding: 10px;
+    }
+}
+
+
 
 .PageHead3 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin: 15px;
 }
 
 .PageHead3_first {
     padding-left: 20px;
+    padding-right: 10px;
     text-align: justify;
     width: 50%;
     /* flex: 1;
@@ -250,6 +320,36 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
     width: 500px;
 }
 
+/* media querys */
+
+@media (max-width:1100px) {
+    .PageHead3_second img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width:850px) {
+    .PageHead3 {
+        flex-direction: column-reverse;
+    }
+
+    .PageHead3_first {
+        width: 100%;
+    }
+
+    .PageHead3_second {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .PageHead3_second img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
 .crd {
     display: flex;
     align-items: center;
@@ -257,17 +357,41 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
 }
 
 .PageHead4 {
-    margin: 10px;
+    margin: 20px;
+
 }
 
 .PageHead4 h3 {
     margin-left: 110px;
-
+    width: 160px;
+    border-bottom: 5px solid rgba(59, 29, 253, 1);
 }
 
 .card img {
     height: 170px;
 }
+
+@media (max-width:850px) {
+    /* .PageHead4 {
+        height: 750px;
+    } */
+
+    .crd {
+        flex-direction: column;
+        height: 750px;
+    }
+
+    .card {
+        width: 25rem !important;
+    }
+}
+
+@media (max-width:500px) {
+    .card {
+        width: 20rem !important;
+    }
+}
+
 
 /* footer */
 footer {
@@ -298,4 +422,10 @@ footer {
     text-align: center;
     margin-top: 20px;
     /* Add some spacing between columns and copyright */
+}
+
+@media (max-width:550px) {
+    .footer-columns {
+        flex-direction: column;
+    }
 }
